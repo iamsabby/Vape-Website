@@ -252,6 +252,44 @@ img {
 .box-text {
     transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
 }
+.box-text-products {
+  padding: 15px;
+  text-align: center;
+}
+
+.category {
+  color: #4e57d4; /* Category color */
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #212529; /* Product title color */
+}
+
+.price-wrapper {
+  margin-top: 10px;
+}
+
+.price {
+  color: #ff4500; /* Price color */
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.is-smaller {
+  font-size: 14px; /* Adjust the font size */
+}
+
+.no-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -351,7 +389,8 @@ html {
 *, *:before, *:after {
     box-sizing: border-box;
 }
-.shop-item .iconbox {
+
+/* .shop-item .iconbox {
   background-color: var(--c-brand);
   color: white;
   position: absolute;
@@ -376,6 +415,50 @@ html {
   color: var(--c-brand);
   font-size: 34px;
   flex: none;
+} */
+
+.shop-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Border radius */
+  transition: transform 0.3s ease-in-out;
+}
+
+.shop-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.image-zoom-wrapper {
+  overflow: hidden;
+}
+
+.image-zoom-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.shop-item:hover .image-zoom-wrapper img {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.iconbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(78, 87, 212, 0.8); /* Background color for the iconbox */
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  transition: opacity 0.3s, top 0.3s;
+}
+
+.shop-item:hover .iconbox {
+  opacity: 1;
+  top: 40%; /* Adjust the position on hover */
 }
 
 /* Review */
