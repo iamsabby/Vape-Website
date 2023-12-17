@@ -154,7 +154,6 @@ img {
 
 /* Hero Section */
 #hero {
-  /* background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)); */
   background-position: center;
   background-size: cover;
 }
@@ -180,23 +179,15 @@ img {
   position:absolute;
   z-index: -10;
   background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 90vh; /* Adjust the height as needed */
-            color: #000000; /* Set text color to contrast with the background */
-            text-align: center;
-            /* padding: 20px; */
-        }
-        /* .section-title{ */
-            /* color: rgb(255, 255, 255); */
-            /* font-display: ; */
-        /* } */
-        /* .section-title h1{
-            color: aliceblue;
-        } */
-        .section-title h2{
-            color: #fffb00;
-        }
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh; /* Adjust the height as needed */
+  color: #000000; /* Set text color to contrast with the background */
+  text-align: center;
+}
+.section-title h2{
+  color: #fffb00;
+}
 .col-lg-6 img{
     margin: auto;
   align-content: center;
